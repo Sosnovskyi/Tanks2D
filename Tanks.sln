@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio 2012
+=======
+# Visual Studio 2010
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tanks.GameEngine", "Tanks.GameEngine\Tanks.GameEngine.csproj", "{7869E111-3D46-4900-A0CD-A4E56856272A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tanks.ConsoleUI", "Tanks.ConsoleUI\Tanks.ConsoleUI.csproj", "{7BCD323D-6E28-4F72-86CB-046DCA7DB4F7}"
@@ -73,4 +77,10 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
+=======
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
 EndGlobal

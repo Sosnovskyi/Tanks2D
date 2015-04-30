@@ -24,11 +24,19 @@ namespace Tanks.ConsoleUI
                 if (i.IsAlive == true)
                 {
                     ConsoleColor color = ConsoleColor.Black;
+<<<<<<< HEAD
                     if (i is Tanks.GameEngine.GameObjects.UnmovableObjects.Wall)    //Tanks.GameEngine.GameObjects.UnmovableObjects. no need
                     {
                         color = ConsoleColor.Yellow;
                     }
                     if (i is Tanks.GameEngine.GameObjects.UnmovableObjects.Concrete)   //Tanks.GameEngine.GameObjects.UnmovableObjects. no need
+=======
+                    if (i is Tanks.GameEngine.GameObjects.UnmovableObjects.Wall)
+                    {
+                        color = ConsoleColor.Yellow;
+                    }
+                    if (i is Tanks.GameEngine.GameObjects.UnmovableObjects.Concrete)
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
                     {
                         color = ConsoleColor.Magenta;
                     }

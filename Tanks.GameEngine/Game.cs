@@ -14,6 +14,7 @@ namespace Tanks.GameEngine
     }
     public class Game
     {
+<<<<<<< HEAD
         public GameStatus gameStatus; // private
         #region Public Fields
         public int score;   // private
@@ -23,6 +24,17 @@ namespace Tanks.GameEngine
         public List<Bullet> bullets { get; set; }   // private
         public List<Enemy> enemies { get; set; }    // private
         public List<Wall> walls { get; set; }   // private
+=======
+        public GameStatus gameStatus;
+        #region Public Fields
+        public int score;
+        public int enemiesCount;
+        public Player Player { get; set; }
+        public GameBoard GameBoard { get; protected set; }
+        public List<Bullet> bullets { get; set; }
+        public List<Enemy> enemies { get; set; }
+        public List<Wall> walls { get; set; }
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
         #endregion
         #region Constructor
         public Game()
@@ -54,7 +66,11 @@ namespace Tanks.GameEngine
         }
         #endregion
         #region Helpers
+<<<<<<< HEAD
         private void PlayerInitialize() 
+=======
+        private void PlayerInitialize()
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
         {
             Player = new Player(7, 18);
             GameBoard.AddObject(Player);
@@ -77,7 +93,11 @@ namespace Tanks.GameEngine
         }
         #endregion
         #region PublicGameMethods
+<<<<<<< HEAD
         public bool CheckPlayerIsAlive() 
+=======
+        public bool CheckPlayerIsAlive()
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
         {
             if (Player.IsAlive == false)
             {
@@ -144,10 +164,17 @@ namespace Tanks.GameEngine
             {
                 return true;
             }
+<<<<<<< HEAD
             else                              //
             {                                 //better use just return false;
                 return false;                 //
             }                                 //
+=======
+            else
+            {
+                return false;
+            }
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
         }
         public void DestructWall(Wall wall)
         {
@@ -168,7 +195,11 @@ namespace Tanks.GameEngine
 
         public void InitializeMap()
         {
+<<<<<<< HEAD
             World world = new World();  //   never used
+=======
+            World world = new World();
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
             
             for (int i = 0; i < 20; i++)
             {
@@ -176,7 +207,11 @@ namespace Tanks.GameEngine
                 {
                     switch (World.MapArray[j, i])
                     {
+<<<<<<< HEAD
                         case '1': GameBoard.AddObject(new GameObjects.UnmovableObjects.Concrete(i, j)); break;  // no need GameObjects.UnmovableObjects
+=======
+                        case '1': GameBoard.AddObject(new GameObjects.UnmovableObjects.Concrete(i, j)); break;
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
                         case '2': Wall wall = new Wall(i, j); GameBoard.AddObject(wall); walls.Add(wall); break;
                         default: break;
                     }

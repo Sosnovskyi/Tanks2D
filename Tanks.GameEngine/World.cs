@@ -15,8 +15,12 @@ namespace Tanks.GameEngine
             MapArray = new char[20, 20];
             int index = 0;
             char[] mapData = null;
+<<<<<<< HEAD
             string path = @"../../../Tanks.GameEngine/Maps/map_1.txt";  // need use absolute path
                                                                         //Tanks.GameEngine/Maps/map_1.txt" this value => config file
+=======
+            string path = @"../../../Tanks.GameEngine/Maps/map_1.txt";
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
             using (StreamReader reader = new StreamReader(path))
             {
                 string mapInfo = reader.ReadToEnd();

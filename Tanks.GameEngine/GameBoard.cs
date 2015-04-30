@@ -37,7 +37,11 @@ namespace Tanks.GameEngine
 
         public bool IsCorrectPosition(IGameObject gameObject, int newX, int newY)
         {
+<<<<<<< HEAD
             if (this.gameObjects.Any(r => r.X == newX && r.Y == newY) == true)  // no need  == true
+=======
+            if (this.gameObjects.Any(r => r.X == newX && r.Y == newY) == true)
+>>>>>>> ac1aa47847c5668fb2e809b3a3ae687c984f7a88
             {
                 return false;
             }
